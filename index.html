@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DIMG</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+<header>
+  <h1>Diego Ibrahim Macedo Gaspar</h1>
+  <p>Estudiante de Ingenieria en Sistemas</p>
+  <nav>
+    <div class="logo"></div>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+  <ul id="nav-links">
+    <li><a href="#sobre-mi">Sobre mí</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#certificaciones">Certificaciones</a></li>
+    <li><a href="#cv">CV</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+</header>
+
+<section id="sobre-mi">
+  <h2>Sobre mí</h2>
+  <p>Estudiante de Ingeniería en Sistemas Computacionales con interes en ciencia de datos, inteligencia
+     artificial y desarrollo web, con más de 3 años de experiencia en análisis
+y presentación de información operativa y financiera. Proactivo, orientado a resultados y con alta
+capacidad de aprendizaje. Me interesa el desarrollo de soluciones tecnológicas aplicadas a la
+administración y la mejora de procesos. Tengo experiencia en captura y análisis de datos, así como
+en el uso avanzado de herramientas de Office para la generación de reportes e indicadores clave. Me
+adapto fácilmente a nuevos retos, disfruto trabajar en equipo y busco constantemente mejorar mis
+habilidades técnicas y analíticas.</p>
+</section>
+
+<section id="proyectos">
+  <h2>Proyectos</h2>
+
+  <div class="proyecto">
+    <h3>Pagina Web para una empresa en crecimiento Atlan Motion</h3>
+    <p>Por el momento solo es el diseño y pocas funcionalidades para vista y formalidad</p>
+    <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
+    <p><a href="https://681bf04f47516121ec40fdaf--jazzy-hummingbird-97127e.netlify.app" target="_blank">Ver en GitHub</a></p>
+  </div>
+
+  <div class="proyecto">
+    <h3>Menú para Bar conocido</h3>
+    <p>Se desarrollo un menú con Responsive para un bar conocido</p>
+    <p><strong>Tecnologías:</strong> Html, CSS</p>
+    <p><a href="https://dimg18.github.io/MenuBananas/" target="_blank">Ver en GitHub</a></p>
+  </div>
+
+  <div class="proyecto">
+    <h3>Pagina Web con servidor local para Gimnasio Titanes</h3>
+    <p>Se desarrollo una Sitio Web como proyecto universitario, con intensiones de venta para el negocio, 
+        con funcionalidades para alta de clientes, registrar, eliminar, mostrar clases en Pagina Web, login, alta de usuarios, 
+    </p>
+    <p><strong>Tecnologías:</strong> Html, CSS, PHP, JavaScript</p>
+    
+  </div>
+
+</section>
+
+<section id="certificaciones">
+  <h2>Certificaciones</h2>
+  <ul>
+    <li>AI Fundamentals - Cisco Networking Academy (Nov 2024)</li>
+    <li>Fundamentos de Python 1 - IBM SkillsBuild (Nov 2024)</li>
+    <li>Introducción a la Ciencia de Datos - IBM SkillsBuild (Oct 2024)</li>
+    <li>Introducción a la Ciberseguridad - Cisco Networking Academy (Oct 2024)</li>
+    <li>Introducción al Internet de las Cosas (IoT) - Cisco Networking Academy (Oct 2024)</li>
+    <li>Digital Awareness - IBM SkillsBuild (Oct 2024)</li>
+  </ul>
+</section>
+
+<section id="cv">
+  <h2>Currículum Vitae</h2>
+  <a href="CV-DIMG.pdf" download class="btn">Descargar CV</a>
+</section>
+
+
+<footer id="contacto">
+  <h2>Contacto</h2>
+  <p style="margin-left: none; margin-right: 30px;" ><i class="fas fa-phone"></i> <a href="tel:+529999052104">999 905 2104</a></p>
+<p style="margin-right: 30px;"><i class="fas fa-envelope"></i> <a href="mailto:LE04210041@merida.tecnm.mx">LE04210041@merida.tecnm.mx</a></p>
+<p><i class="fab fa-github"></i> <a href="https://github.com/DIMG18" target="_blank">github.com/DIMG18</a></p>
+
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+const navUl = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', () => {
+  navUl.classList.toggle('show');
+});
+
+// Aquí agregamos para que al hacer clic en cualquier enlace, el menú se oculte
+navUl.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navUl.classList.remove('show');
+  });
+});
+
+</script>
+
+
+
+</body>
+</html>
